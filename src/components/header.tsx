@@ -19,7 +19,7 @@ const Header = () => {
     <header className="w-full flex justify-center items-center py-8">
       <nav className="flex space-x-20 items-center">
         <ul className="flex items-center flex-wrap space-x-20">
-          <li>Home</li>
+          <li className=''>Home</li>
           <li>About</li>
           <li>Experiences</li>
           <li>Projects</li>

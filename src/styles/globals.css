@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --text-100:#EEEEEE;
+  --text-200:#FDEBED;
+    
+}
