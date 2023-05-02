@@ -25,6 +25,9 @@ module.exports = {
         200 : '#FDEBED',
         300 : '#FC2831'
       }
+    },
+    fontFamily : {
+      'poppins' : ['Poppins']
     }
   },
   plugins: [],
