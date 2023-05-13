@@ -21,7 +21,7 @@ interface props {
 const Hero = ({ language } : props) => {
   return(
     <>
-      <section className="hero">
+      <section className="hero max-w-[290px] mx-auto">
         <Image
           src={Avatar}
           alt='Aldair André'
@@ -37,14 +37,14 @@ const Hero = ({ language } : props) => {
             }
             <span className='block gradient-text'>Aldair André</span> 
           </h1>
-          <p className='mt-[12px] px-[60px] font-semibold text-center'>
+          <p className='max-w-[234px] mx-auto mt-[12px] text-lg text-center'>
             {
               language === 'en' ? dataEnglish[2] : dataPortuguese[2]
             }
           </p>
         </div>
-        <div className='mx-auto mt-[38px] text-center'>
-          <button className='w-fit py-[15px] px-[80px] bg-gradient-to-l from-[#9E3DFF] to-[#F30EDC] rounded-full font-poppins'>
+        <div className='w-full mt-[38px] text-center'>
+          <button className='py-[15px] px-[80px] bg-gradient-to-l from-[#9E3DFF] to-[#F30EDC] rounded-full font-poppins'>
             {
               language === 'en' ? dataEnglish[3] : dataPortuguese[3]
             }
