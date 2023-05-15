@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Avatar from '../../public/images/aldair-andre.png'
+import Avatar from '../images/aldair-andre.png'
 
 const dataEnglish = [
   "Hey, i'm",
