@@ -7,10 +7,6 @@ import {
   LanguageIcon
 } from '@heroicons/react/24/solid';
 
-import Image from 'next/image'
-import moon from '../../public/images/svg/moon-solid.svg'
-import sun from '../../public/images/svg/sun-regular.svg'
-import languageIcon from '../../public/images/svg/language.svg'
 
 interface props {
   language : string
