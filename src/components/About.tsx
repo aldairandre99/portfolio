@@ -1,4 +1,5 @@
 import React from 'react'
+import { useLanguages } from '@/contexts/LanguageContext'
 
 const dataEnglish = [
   "My History",
@@ -15,11 +16,10 @@ const dataPortuguese = [
   `
 ]
 
-interface props {
-  language : string
-}
+const About = () => {
 
-const About = ({ language } : props) => {
+  const { language }  = useLanguages()
+
   return (
     <>
       <section className='flex flex-col items-center mt-[38px]'>

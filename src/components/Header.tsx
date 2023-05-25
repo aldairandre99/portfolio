@@ -6,17 +6,14 @@ import {
   SunIcon,
   LanguageIcon
 } from '@heroicons/react/24/solid';
+import { useLanguages } from '@/contexts/LanguageContext';
 
 
-interface props {
-  language : string
-  setLanguage : Dispatch<string>
-}
-
-const Header = ({ language, setLanguage }:props) => {
+const Header = () => {
 
   const { systemTheme, theme, setTheme } = useTheme()
   const [mounted, setMounted ] = useState(false)
+  const { language, changeLanguage } = useLanguages()
   
   useEffect(()=>{
     setMounted(true)
@@ -45,7 +42,7 @@ const Header = ({ language, setLanguage }:props) => {
       </nav>
       <div className='flex justify-between pt-[21px] pb-[27.3px] ml-[35px] mr-[35.3px]'>
 
-        <LanguageIcon  className="w-6 h-6" onClick={() => { language === "en" ? setLanguage("pt") : setLanguage("en")}}/>
+        <LanguageIcon  className="w-6 h-6" onClick={() => { language === "en" ? changeLanguage("pt") : changeLanguage("en")}}/>
 
         <div className='flex items-center'>
 

@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import Avatar from '../images/aldair-andre.png'
+import Link from 'next/link'
+import { useLanguages } from '@/contexts/LanguageContext'
 
 const dataEnglish = [
   "Hey, i'm",
@@ -14,11 +16,10 @@ const dataPortuguese = [
   "Incicar"
 ]
 
-interface props {
-  language : string
-}
+const Hero = () => {
 
-const Hero = ({ language } : props) => {
+  const { language } = useLanguages()
+
   return(
     <>
       <section className="hero max-w-[290px] mx-auto">
@@ -44,11 +45,13 @@ const Hero = ({ language } : props) => {
           </p>
         </div>
         <div className='w-full mt-[38px] text-center'>
-          <button className='w-full py-[15px] px-[0px] bg-gradient-to-l from-[#9E3DFF] to-[#F30EDC] rounded-full font-poppins text-xl font-normal'>
-            {
-              language === 'en' ? dataEnglish[3] : dataPortuguese[3]
-            }
-          </button>
+            <button className='w-full py-[15px] px-[0px] bg-gradient-to-l from-[#9E3DFF] to-[#F30EDC] rounded-full font-poppins text-xl font-normal'>
+              <Link href='/about'>
+                {
+                  language === 'en' ? dataEnglish[3] : dataPortuguese[3]
+                }
+              </Link>
+            </button>
         </div>
       </section>
     </>

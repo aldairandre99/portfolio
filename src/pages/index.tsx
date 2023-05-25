@@ -9,8 +9,8 @@ export default function Home() {
   
   return (
     <main>
-      <Header language={language} setLanguage={setLanguase}/>
-      <Hero language={language}/>
+      <Header/>
+      <Hero/>
     </main>
   )
 }
