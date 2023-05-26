@@ -1,14 +1,11 @@
 import ArrowIcons from "@/components/ArrowIcons"
 import Header from "@/components/Header"
-import { useState } from "react"
 
 const Projects = () => {
 
-  const [ language, setLanguage ] = useState("en")
-
   return (
     <>
-      <Header language={language} setLanguage={setLanguage}/>
+      <Header/>
       <h1>
         Projects Page
       </h1>

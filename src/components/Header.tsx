@@ -1,5 +1,5 @@
 import { useTheme } from 'next-themes';
-import { Dispatch, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { 
   Bars3Icon,
   MoonIcon,
