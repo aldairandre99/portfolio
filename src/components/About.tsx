@@ -22,7 +22,7 @@ const About = () => {
 
   return (
     <>
-      <section className='flex flex-col items-center mt-[38px]'>
+      <section className='flex flex-col items-center mt-[38px]' id='about'>
         <h1 className='mb-[18px] text-[40px]'>
           {
             language === "en" ? dataEnglish[0] : dataPortuguese[0]

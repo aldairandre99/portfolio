@@ -46,7 +46,7 @@ const Hero = () => {
         </div>
         <div className='w-full mt-[38px] text-center'>
             <button className='w-full py-[15px] px-[0px] bg-gradient-to-l from-[#9E3DFF] to-[#F30EDC] rounded-full font-poppins text-xl font-normal'>
-              <Link href='/about'>
+              <Link href='#about'>
                 {
                   language === 'en' ? dataEnglish[3] : dataPortuguese[3]
                 }
