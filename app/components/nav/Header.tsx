@@ -8,7 +8,7 @@ import {
   SunIcon,
   LanguageIcon
 } from '@heroicons/react/24/solid';
-import { useLanguages } from '../contexts/LanguageContext';
+import { useLanguages } from '../../contexts/LanguageContext';
 
 
 const Header = () => {
