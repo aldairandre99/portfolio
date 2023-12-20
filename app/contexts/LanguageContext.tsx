@@ -1,3 +1,5 @@
+"use client"
+
 import { ReactNode, createContext, useState, useContext } from "react";
 
   interface LanguageContextProps {

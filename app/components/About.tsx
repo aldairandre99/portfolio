@@ -1,5 +1,5 @@
 import React from 'react'
-import { useLanguages } from '@/contexts/LanguageContext'
+import { useLanguages } from '../contexts/LanguageContext'
 
 const dataEnglish = [
   "My History",

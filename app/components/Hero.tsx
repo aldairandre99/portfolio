@@ -1,7 +1,9 @@
+"use client"
+
 import Image from 'next/image'
 import Avatar from '../images/aldair-andre.png'
 import Link from 'next/link'
-import { useLanguages } from '@/contexts/LanguageContext'
+import { useLanguages } from '../contexts/LanguageContext'
 
 const dataEnglish = [
   "Hey, i'm",
