@@ -8,7 +8,6 @@ const int = Poppins({
 })
 
 import './globals.css'
-import { LanguageProvider } from "./contexts/LanguageContext"
 import Providers from "./Providers"
 
 export const metadata: Metadata = {
@@ -20,15 +19,13 @@ export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
-}) {Providers
+}) {
   return (
-    <html lang="en" className={int.className}>
+    <html lang="en" className={int.className} suppressHydrationWarning>
       <body className="dark:bg-gray-300 dark:text-slate-100">
-        <LanguageProvider>
-          <Providers>
-            {children}
-          </Providers>
-        </LanguageProvider>
+        <Providers>
+          {children}
+        </Providers>
       </body>
     </html>
   )
