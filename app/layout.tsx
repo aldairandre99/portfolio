@@ -2,12 +2,13 @@ import type { Metadata } from "next"
 import { Poppins } from "next/font/google"
 
 const int = Poppins({
-  subsets : ['latin'],
-  weight : ['400'],
+  subsets: ['latin'],
+  weight: ['400'],
   style: 'normal',
 })
 
 import './globals.css'
+import { LanguageProvider } from "./contexts/LanguageContext"
 
 export const metadata: Metadata = {
   title: 'Aldair André',
@@ -21,7 +22,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={int.className}>
-      <body>{children}</body>
+      <body>
+        <LanguageProvider>
+          {children}
+        </LanguageProvider>
+      </body>
     </html>
   )
 }
