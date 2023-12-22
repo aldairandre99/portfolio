@@ -31,7 +31,9 @@ const MobileMenu = () => {
                     </li>
                   ))) :
                   (categorias.map(([title, url], index) => (
-                    <li key={index} className='flex justify-between py-[13px] border-b-[1px]'>
+                    <li key={index} className='flex justify-between py-[13px] border-b-[1px]'
+                    onClick={() => changeMenu(isOn)}
+                    >
                       <Link href={url}>{title}</Link>
                     </li>
                   )))
