@@ -1,4 +1,5 @@
 const categories = [
+  ['Home', '/'],
   ['About', '/about'],
   ['Projects', '/projects'],
   ['Skills', '/skills'],
@@ -6,6 +7,7 @@ const categories = [
 ]
 
 const categorias = [
+  ['Home', '/'],
   ['Sobre', '/about'],
   ['Projetos', '/projects'],
   ['Skills', '/skills'],

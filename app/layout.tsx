@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import { Poppins } from "next/font/google"
+import Header from '@/app/components/nav'
 
 const int = Poppins({
   subsets: ['latin'],
@@ -24,6 +25,7 @@ export default function RootLayout({
     <html lang="en" className={int.className} suppressHydrationWarning>
       <body className="dark:bg-gray-300 dark:text-slate-100">
         <Providers>
+          <Header/>
           {children}
         </Providers>
       </body>
