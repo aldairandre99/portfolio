@@ -18,7 +18,7 @@ const MobileMenu = () => {
     <>
       {isOn ?
         (
-          <div className='flex flex-col items-center mt-4 px-[35px] bg-gray-300 absolute top-[56px] left-0 right-0 h-screen z-[1] bg-menu-color text-white'>
+          <div className='flex flex-col items-center mt-4 px-[35px] bg-[#fff] absolute top-[56px] left-0 right-0 h-screen z-[1] dark:bg-[#222831] text-white'>
             <ul className='flex flex-col items-centertext-white w-full'>
               {
 
