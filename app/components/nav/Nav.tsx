@@ -1,6 +1,5 @@
 import React from 'react'
-
-
+import UlLinks from './ul-links'
 
 const Nav = () => {
 
@@ -9,18 +8,10 @@ const Nav = () => {
         hidden
         lg:flex 
         lg:space-x-20 
-        lg:items-center">
-      <ul className="
-          lg:flex 
-          lg:items-center 
-          lg:flex-wrap 
-          lg:space-x-20"
-      >
-        <li>Home</li>
-        <li>About</li>
-        <li>Experiences</li>
-        <li>Projects</li>
-      </ul>
+        lg:items-center
+        lg:mt-10
+        lg:mb-32">
+      <UlLinks/>
     </nav>
   )
 }

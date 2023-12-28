@@ -12,8 +12,8 @@ const Index = () => {
 
     <header className='relative'>
       <Nav />
-      <Languageicon>
-        <MobileIcons />
+      <Languageicon hidden={true}>
+        <MobileIcons hidden={true}/>
       </Languageicon>
       <MobileMenu />
     </header>
