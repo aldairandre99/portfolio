@@ -9,7 +9,7 @@ const ButtonText = () => {
   const { language } = useLanguages()
 
   return (
-    <Link href='#about'>
+    <Link href='/about'>
       {
         language === 'en' ? dataEnglish[3] : dataPortuguese[3]
       }

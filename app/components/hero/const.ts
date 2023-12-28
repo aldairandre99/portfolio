@@ -1,14 +1,14 @@
 const dataEnglish = [
   "Hey, i'm",
   "Aldair André",
-  "Self-taught with different areas of activity",
-  "Getting started"
+  "Computer Engineering",
+  "About Me"
 ]
 const dataPortuguese = [
   "Olá, eu sou",
   "Aldair André",
-  "Autodidata com diferentes áreas de atividade",
-  "Incicar"
+  "Engenheiro Informática",
+  "Me Conheça"
 ]
 
 export {
