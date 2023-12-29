@@ -21,6 +21,9 @@ module.exports = {
         200 : '#393E46',
         100 : '#454e59'
       },
+      'gray-light' : {
+        100 : '#e6e6e6'
+      },
       'slate' : {
         100 : '#EEEEEE',
         200 : '#FDEBED',
