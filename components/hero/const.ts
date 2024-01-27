@@ -7,7 +7,7 @@ const dataEnglish = [
 const dataPortuguese = [
   "Olá, eu sou",
   "Aldair André",
-  "Engenheiro Informática",
+  "Engenheiro Informático",
   "Me Conheça"
 ]
 
