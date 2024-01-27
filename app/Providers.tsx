@@ -2,12 +2,17 @@
 
 import { ThemeProvider } from 'next-themes'
 import React, { ReactNode } from 'react'
-import { MenuProvider } from './contexts/NavBar'
-import { LanguageProvider } from './contexts/LanguageContext'
+import { MenuProvider } from '../components/contexts/NavBar'
+import { LanguageProvider } from '../components/contexts/LanguageContext'
 
 export function Providers({ children }: { children: ReactNode }) {
   return (
-    <ThemeProvider attribute="class">
+    <ThemeProvider
+      attribute='class'
+      defaultTheme='dark'
+      enableSystem
+      disableTransitionOnChange
+    >
       <LanguageProvider>
         <MenuProvider>
           {children}

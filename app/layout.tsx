@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import { Poppins } from "next/font/google"
-import Header from '@/app/components/nav'
+import Header from '@/components/nav'
 
 const int = Poppins({
   subsets: ['latin'],

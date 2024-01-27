@@ -1,5 +1,5 @@
 import React from 'react'
-import BuildingPage from "@/app/components/Building-page"
+import BuildingPage from "@/components/Building-page"
 
 const Skills = () => {
   return (

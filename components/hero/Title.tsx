@@ -1,7 +1,7 @@
 "use client"
 
 import React from 'react'
-import { useLanguages } from '../../contexts/LanguageContext'
+import { useLanguages } from '@/components/contexts/LanguageContext'
 import { dataEnglish,dataPortuguese } from './const'
 
 const Title = () => {

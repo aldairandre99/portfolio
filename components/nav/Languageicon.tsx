@@ -4,7 +4,7 @@ import React,{ReactNode} from 'react'
 import {
   LanguageIcon
 } from '@heroicons/react/24/solid';
-import { useLanguages } from '../../contexts/LanguageContext';
+import { useLanguages } from '@/components/contexts/LanguageContext';
 
 const Languageincon = ({children,hidden}:{children:ReactNode,hidden:boolean}) => {
  

@@ -2,9 +2,9 @@
 
 import React from 'react'
 import Link from 'next/link'
-import { useMenu } from '@/app/contexts/NavBar'
+import { useMenu } from '@/components/contexts/NavBar'
 import { categories, categorias } from './consts'
-import { useLanguages } from '@/app/contexts/LanguageContext'
+import { useLanguages } from '@/components/contexts/LanguageContext'
 
 const UlLinks = () => {
 

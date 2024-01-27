@@ -1,6 +1,6 @@
 import React from 'react'
 import Section from './Section'
-import Header from '../components/nav'
+import Header from '@/components/nav'
 
 const About = () => {
 

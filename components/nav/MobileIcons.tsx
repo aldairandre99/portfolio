@@ -11,9 +11,9 @@ import {
 import {
   MoonIcon,
 } from '@heroicons/react/24/outline';
-import { useMenu } from '@/app/contexts/NavBar';
+import { useMenu } from '@/components/contexts/NavBar';
 
-const MobileIcons = ({hidden}:{hidden:boolean}) => {
+const MobileIcons = ({ hidden }: { hidden: boolean }) => {
 
   const { theme, setTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
@@ -24,10 +24,16 @@ const MobileIcons = ({hidden}:{hidden:boolean}) => {
   }, [])
 
   return (
-    <div className={`flex items-center lg:${hidden ? 'hidden' : null}`}>
+    <div className={`flex items-center lg:${hidden ? 'hidden' : null}`} >
       {
-        theme === 'dark' ? <SunIcon className='w-6 h-6 stroke-gray-300 mr-[10px]' onClick={() => setTheme("light")} />
-          : <MoonIcon className='w-6 h-6 stroke-gray-300 mr-[10px]' onClick={() => setTheme("dark")} />
+        theme === 'dark' ?
+          <div suppressContentEditableWarning>
+            <SunIcon className='w-6 h-6 stroke-gray-300 mr-[10px]' onClick={() => setTheme("light")} />
+          </div>
+          :
+          <div suppressHydrationWarning>
+            <MoonIcon className='w-6 h-6 stroke-gray-300 mr-[10px]' onClick={() => setTheme("dark")} />
+          </div>
       }
 
       {

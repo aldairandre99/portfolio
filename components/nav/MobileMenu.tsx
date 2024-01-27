@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import { useMenu } from '@/app/contexts/NavBar'
+import { useMenu } from '@/components/contexts/NavBar'
 import UlLinks from './ul-links'
 
 const MobileMenu = () => {

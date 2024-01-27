@@ -1,4 +1,4 @@
-import BuildingPage from "@/app/components/Building-page"
+import BuildingPage from "@/components/Building-page"
 
 const Projects = () => {
   return (

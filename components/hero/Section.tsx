@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react'
 import Image from 'next/image'
-import Avatar from '../../images/aldair-andre.png'
+import Avatar from '@/public/aldair-andre.png'
 import ButtonText from './ButtonText'
 import Title from './Title'
 import LoadingHero from './loading'
