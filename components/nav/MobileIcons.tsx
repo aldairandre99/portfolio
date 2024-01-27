@@ -27,7 +27,7 @@ const MobileIcons = ({ hidden }: { hidden: boolean }) => {
     <div className={`flex items-center lg:${hidden ? 'hidden' : null}`} >
       {
         theme === 'dark' ?
-          <div suppressContentEditableWarning>
+          <div suppressHydrationWarning>
             <SunIcon className='w-6 h-6 stroke-gray-300 mr-[10px]' onClick={() => setTheme("light")} />
           </div>
           :
