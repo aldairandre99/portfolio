@@ -8,6 +8,9 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    dark: {
+      background: '#1d2126',
+    },
     colors : {
       'purple': {
         950 : '#892CDC',
