@@ -9,11 +9,9 @@ const Nav = () => {
   return (
     <nav className="
         mb-4
-        lg:flex
-        lg:space-x-20 
-        lg:items-center
         lg:mt-10
-        lg:mb-32">
+        lg:mb-32
+        lg:w-full">
       <Ul />
       <div className='flex justify-between items-center p-4 lg:hidden'>
         <MenuIcon />

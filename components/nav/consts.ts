@@ -7,7 +7,7 @@ const categories = [
 ]
 
 const categorias = [
-  ['Home', '/'],
+  ['Inicio', '/'],
   ['Sobre', '/about'],
   ['Projetos', '/projects'],
   ['Skills', '/skills'],

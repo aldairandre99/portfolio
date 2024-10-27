@@ -12,7 +12,7 @@ const Languageincon = () => {
 
   return (
     <div>
-      <LanguageIcon className="w-6 h-6" onClick={() => { language === "en" ? changeLanguage("pt") : changeLanguage("en") }} />
+      <LanguageIcon className="w-6 h-6 lg:mr-10" onClick={() => { language === "en" ? changeLanguage("pt") : changeLanguage("en") }} />
     </div>
   )
 }
