@@ -1,10 +1,9 @@
-import React from 'react'
-import Section from './Section'
+import React from "react";
+
+import Section from "./Section";
 
 const Index = () => {
-  return (
-    <Section/>
-  )
-}
+  return <Section />;
+};
 
-export default Index
+export default Index;

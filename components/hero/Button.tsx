@@ -1,0 +1,31 @@
+"use client";
+import React from "react";
+import { Button } from "@nextui-org/button";
+
+import { dataEnglish, dataPortuguese } from "./const";
+
+import { useLanguages } from "@/components/contexts/LanguageContext";
+
+export const CustomButton = () => {
+  const { language } = useLanguages();
+
+  return (
+    <div className="flex flex-col lg:flex-row ">
+      <Button
+        className="w-full bg-gradient-to-l from-[#9E3DFF] to-[#F30EDC] font-poppins text-xl font-normal mt-3 lg:mt-0 lg:mr-3"
+        radius="full"
+        size="lg"
+      >
+        {language === "en" ? dataEnglish[3] : dataPortuguese[3]}
+      </Button>
+      <Button
+        className="w-full text-xl font-normal mt-5 lg:mt-0 "
+        radius="full"
+        size="lg"
+        variant="bordered"
+      >
+        {language === "en" ? dataEnglish[4] : dataPortuguese[4]}
+      </Button>
+    </div>
+  );
+};

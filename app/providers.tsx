@@ -4,8 +4,9 @@ import * as React from "react";
 import { NextUIProvider } from "@nextui-org/system";
 import { useRouter } from "next/navigation";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
-import {Providers as ProviderLang } from '../components/Providers';
 import { ThemeProviderProps } from "next-themes/dist/types";
+
+import { LanguageProvider } from "@/components/contexts/LanguageContext";
 
 export interface ProvidersProps {
   children: React.ReactNode;
@@ -18,9 +19,7 @@ export function Providers({ children, themeProps }: ProvidersProps) {
   return (
     <NextUIProvider navigate={router.push}>
       <NextThemesProvider {...themeProps}>
-        <ProviderLang>
-          {children}
-        </ProviderLang>
+        <LanguageProvider>{children}</LanguageProvider>
       </NextThemesProvider>
     </NextUIProvider>
   );

@@ -1,17 +1,20 @@
 const dataEnglish = [
-  "Hey, i'm",
-  "Aldair André",
-  "Computer Engineering",
-  "About Me"
-]
+  "I create digital solucions",
+  "Greetings, i’m",
+  `Computer Engineer, freelancer, focused on
+        creating digital solutions, with 2 years of
+        experience, always looking for new challenges `,
+  `Get in Touch`,
+  `My Cv `,
+];
 const dataPortuguese = [
-  "Olá, eu sou",
-  "Aldair André",
-  "Engenheiro Informático",
-  "Me Conheça"
-]
+  "Criando soluções digitais",
+  "Saudações, eu sou",
+  `Engenheiro Informatico, freelancer, com foco em
+        criar soluções digitais, com 2 anos de
+        experiência, sempre em busca de novos desafios`,
+  "Me Conheça",
+  "Meu CV",
+];
 
-export {
-  dataEnglish,
-  dataPortuguese
-}
+export { dataEnglish, dataPortuguese };
