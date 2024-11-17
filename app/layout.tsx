@@ -33,7 +33,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html suppressHydrationWarning lang="en" className="overflow-x-hidden">
+    <html suppressHydrationWarning className="overflow-x-hidden" lang="en">
       <head />
       <body
         className={clsx(
@@ -44,9 +44,7 @@ export default function RootLayout({
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <div className="relative flex flex-col h-screen">
             <Navbar />
-            <main>
-              {children}
-            </main>
+            <main>{children}</main>
             <Footer />
           </div>
         </Providers>

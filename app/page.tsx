@@ -1,7 +1,7 @@
 import Hero from "@/components/hero";
 import Line from "@/components/line";
 import Services from "@/components/services";
-import DefaultLayout from '@/components/defaultLayout'
+import DefaultLayout from "@/components/defaultLayout";
 
 export default function Home() {
   return (

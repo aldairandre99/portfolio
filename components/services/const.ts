@@ -6,8 +6,8 @@ const services = [
     idea, so that i can make continuous and
     safe deliveries for your brilliant idea
   `,
-  "Get in touch"
-]
+  "Get in touch",
+];
 
 const servicos = [
   "Serviços",
@@ -16,10 +16,7 @@ const servicos = [
     no mercado para o desenvolvimento da sua
     idéia e com entrega continuas
   `,
-  "Fala comigo"
-]
+  "Fala comigo",
+];
 
-export {
-  services,
-  servicos
-}
+export { services, servicos };
