@@ -7,7 +7,8 @@ import { Providers } from "./providers";
 import { siteConfig } from "@/config/site";
 import { fontPoppins } from "@/config/fonts";
 import { Navbar } from "@/components/navbar";
-import Footer from "@/components/Footer";
+import Footer from "@/components/footer";
+import Defaultlayout from "@/components/defaultLayout";
 
 export const metadata: Metadata = {
   title: {
@@ -45,7 +46,9 @@ export default function RootLayout({
           <div className="relative flex flex-col h-screen">
             <Navbar />
             <main>{children}</main>
-            <Footer />
+            <Defaultlayout>
+              <Footer />
+            </Defaultlayout>
           </div>
         </Providers>
       </body>
