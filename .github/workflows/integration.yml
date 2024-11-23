@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.2.2
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
@@ -19,4 +19,4 @@ jobs:
       - name: Lint Validations
         run:  npm run lint
       - name: Build with Next.js
-        run:  next build
+        run:  npm run build
