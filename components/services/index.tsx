@@ -24,7 +24,7 @@ const Index = () => {
             <Button
               className="hidden lg:block bg-gradient-to-l from-[#9E3DFF] to-[#F30EDC] font-poppins text-xl font-normal mt-3 lg:mt-0 lg:mr-3"
               radius="full"
-              size="md"
+              size="lg"
             >
               {language === "en" ? services[2] : servicos[2]}
             </Button>
@@ -36,9 +36,9 @@ const Index = () => {
             <li>UI/UX</li>
           </ul>
           <Button
-            className="lg:hidden bg-gradient-to-l from-[#9E3DFF] to-[#F30EDC] font-poppins text-xl font-normal mt-6"
+            className="lg:hidden bg-gradient-to-l from-[#9E3DFF] to-[#F30EDC] font-poppins text-xl font-normal mt-3 lg:mt-0 lg:mr-3"
             radius="full"
-            size="md"
+            size="lg"
           >
             {language === "en" ? services[2] : servicos[2]}
           </Button>
