@@ -12,7 +12,7 @@ const Index = () => {
   const { language } = useContext(LanguageContext);
 
   return (
-    <div className="dark:bg-[#273240] w-full mt-6 lg:mt-[240px] pt-28 pb-20">
+    <div className="dark:bg-[#273240] w-full mt-6 lg:mt-[240px] pt-28 pb-20" id="services">
       <DefaultLayout>
         <div className="flex flex-col lg:max-w-4xl lg:mx-auto lg:flex-row lg:justify-between ">
           <motion.div

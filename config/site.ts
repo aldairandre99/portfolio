@@ -10,14 +10,13 @@ export const siteConfig = {
     },
     {
       label: "About",
-      href: "/#about",
+      href: "/",
     },
+    { label: "Services", href: "/#services" },
     {
       label: "Projects",
       href: "/#projects",
     },
-    { label: "Skills", href: "/#skills" },
-    { label: "Services", href: "/#services" },
   ],
   navMenuItems: [
     {
@@ -28,12 +27,11 @@ export const siteConfig = {
       label: "About",
       href: "/#about",
     },
+    { label: "Services", href: "/#services" },
     {
       label: "Projects",
       href: "/#projects",
     },
-    { label: "Skills", href: "/#skills" },
-    { label: "Services", href: "/#services" },
   ],
   links: {
     github: "https://github.com/aldairandre99",
