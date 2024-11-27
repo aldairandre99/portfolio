@@ -5,6 +5,7 @@ import { Button } from "@nextui-org/button";
 import { dataEnglish, dataPortuguese } from "./const";
 
 import { useLanguages } from "@/components/contexts/LanguageContext";
+import Link from "next/link";
 
 export const CustomButton = () => {
   const { language } = useLanguages();
@@ -24,7 +25,23 @@ export const CustomButton = () => {
         size="lg"
         variant="bordered"
       >
-        {language === "en" ? dataEnglish[4] : dataPortuguese[4]}
+        {
+          language === 'en' ? (
+            <Link
+              href='/Aldair-Andre-Cv-English.pdf'
+              target="_blank"
+            >
+              {dataEnglish[4]}
+            </Link>
+          ) : (
+            <Link
+                href='/Aldair-Andre-Cv-PT.pdf'
+              target="_blank"
+            >
+              {dataPortuguese[4]}
+            </Link>
+          )
+        }
       </Button>
     </div>
   );
