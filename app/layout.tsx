@@ -38,12 +38,12 @@ export default function RootLayout({
       <head />
       <body
         className={clsx(
-          "min-h-screen bg-background font-poppins antialiased",
+          "bg-background font-poppins antialiased",
           fontPoppins.variable,
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-          <div className="relative flex flex-col h-screen">
+          <div className="relative flex flex-col">
             <Navbar />
             <main>{children}</main>
             <Defaultlayout>
