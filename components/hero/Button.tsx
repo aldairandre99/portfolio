@@ -28,14 +28,14 @@ export const CustomButton = () => {
         {
           language === 'en' ? (
             <Link
-              href='/Aldair-Andre-cv.pdf'
+              href='/Aldair-Andre-Cv-English.pdf'
               target="_blank"
             >
               {dataEnglish[4]}
             </Link>
           ) : (
             <Link
-              href='/Aldair-Andre-cv.pdf'
+                href='/Aldair-Andre-Cv-PT.pdf'
               target="_blank"
             >
               {dataPortuguese[4]}
