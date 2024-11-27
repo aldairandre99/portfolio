@@ -11,6 +11,7 @@ import GithubIcon from "@/public/icons/github.svg";
 import InstagramIcon from "@/public/icons/instagram.svg";
 import Linkedin from "@/public/icons/linkedin.svg";
 import WhatsappIcon from "@/public/icons/whatsapp.svg";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   const { language } = useContext(LanguageContext);
@@ -18,11 +19,19 @@ const Footer = () => {
   return (
     <div className="py-24">
       <div className="flex flex-col lg:flex-row justify-between">
-        <div className="flex flex-col space-y-6 lg:w-2/4">
+        <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          transition={{ ease: 'easeIn', duration: 0.5, delay: 0.6 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          className="flex flex-col space-y-6 lg:w-2/4">
           <h1 className="text-[30px] font-bold">Aldair André</h1>
           <p>{language === "en" ? p : pp}</p>
-        </div>
-        <div className="flex flex-col space-y-8">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: 100 }}
+          transition={{ ease: 'easeIn', duration: 0.5, delay: 0.6 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          className="flex flex-col space-y-8">
           <ul className="hidden lg:flex lg:space-x-8">
             <li>
               <Link href={`/`}>
@@ -88,7 +97,7 @@ const Footer = () => {
               </Link>
             </li>
           </ul>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
