@@ -6,6 +6,7 @@ import { LanguageContext } from "../contexts/LanguageContext";
 import DefaultLayout from "../defaultLayout";
 
 import { services, servicos } from "./const";
+import { motion } from "framer-motion";
 
 const Index = () => {
   const { language } = useContext(LanguageContext);
@@ -14,7 +15,11 @@ const Index = () => {
     <div className="dark:bg-[#273240] w-full mt-6 lg:mt-[240px] pt-28 pb-20">
       <DefaultLayout>
         <div className="flex flex-col lg:max-w-4xl lg:mx-auto lg:flex-row lg:justify-between ">
-          <div className="mb-8 lg:w-2/5">
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            transition={{ ease: 'easeIn', duration: 0.5, delay: 0.2 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            className="mb-8 lg:w-2/5">
             <h1 className="text-[40px] font-bold mb-6">
               {language === "en" ? services[0] : servicos[0]}
             </h1>
@@ -28,20 +33,30 @@ const Index = () => {
             >
               {language === "en" ? services[2] : servicos[2]}
             </Button>
-          </div>
-          <ul className="flex flex-col space-y-11 lg:w-2/5 text-xl font-medium">
+          </motion.div>
+          <motion.ul
+            initial={{ opacity: 0, x: 100 }}
+            transition={{ ease: 'easeIn', duration: 0.5, delay: 0.2 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            className="flex flex-col space-y-11 lg:w-2/5 text-xl font-medium">
             <li>WEBSITES</li>
             <li>MOBILE APPS</li>
             <li>DESKTOP APPS</li>
             <li>UI/UX</li>
-          </ul>
-          <Button
-            className="lg:hidden bg-gradient-to-l from-[#9E3DFF] to-[#F30EDC] font-poppins text-xl font-normal mt-3 lg:mt-0 lg:mr-3"
-            radius="full"
-            size="lg"
+          </motion.ul>
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            transition={{ ease: 'easeIn', duration: 0.5, delay: 0.2 }}
+            whileInView={{ opacity: 1, x: 0 }}
           >
-            {language === "en" ? services[2] : servicos[2]}
-          </Button>
+            <Button
+              className="lg:hidden bg-gradient-to-l from-[#9E3DFF] to-[#F30EDC] font-poppins text-xl font-normal mt-3 lg:mt-0 lg:mr-3"
+              radius="full"
+              size="lg"
+            >
+              {language === "en" ? services[2] : servicos[2]}
+            </Button>
+          </motion.div>
         </div>
       </DefaultLayout>
     </div>
