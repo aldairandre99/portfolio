@@ -9,17 +9,26 @@ import { project, projeto } from "./const";
 import imageSecoth from "@/public/project2.jpg";
 import imagetreeth from "@/public/project3.jpg";
 import imageForth from "@/public/project4.jpg";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   const { language } = useContext(LanguageContext);
 
   return (
     <section className="pt-8 lg:max-w-4xl mx-auto lg:pt-28">
-      <h1 className="text-[40px] font-bold mb-8">
+      <motion.h1
+        initial={{ opacity: 0, x: -100 }}
+        transition={{ ease: 'easeIn', duration: 0.5, delay: 0.2 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        className="text-[40px] font-bold mb-8">
         {language === "en" ? project[0] : projeto[0]}
-      </h1>
+      </motion.h1>
       <div className="lg:flex lg:flex-row lg:space-x-4 lg:mt-28">
-        <div className="flex flex-col space-y-6 mb-10 md:items-center">
+        <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          transition={{ ease: 'easeIn', duration: 0.5, delay: 0.2 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          className="flex flex-col space-y-6 mb-10 md:items-center">
           <h1 className="text-2xl font-bold">
             {language === "en" ? project[1] : projeto[1]}
           </h1>
@@ -28,8 +37,12 @@ const Projects = () => {
           <h2 className="text-2xl font-bold">
             {language === "en" ? project[3] : projeto[3]}
           </h2>
-        </div>
-        <div className="flex flex-col space-y-6 mb-10 md:items-center">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          transition={{ ease: 'easeIn', duration: 0.5, delay: 0.4 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          className="flex flex-col space-y-6 mb-10 md:items-center">
           <h1 className="text-2xl font-bold">
             {language === "en" ? project[4] : projeto[4]}
           </h1>
@@ -38,8 +51,12 @@ const Projects = () => {
           <h2 className="text-2xl font-bold">
             {language === "en" ? project[6] : projeto[6]}
           </h2>
-        </div>
-        <div className="flex flex-col space-y-6 mb-10 md:items-center">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          transition={{ ease: 'easeIn', duration: 0.5, delay: 0.6 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          className="flex flex-col space-y-6 mb-10 md:items-center">
           <h1 className="text-2xl font-bold">
             {language === "en" ? project[7] : projeto[7]}
           </h1>
@@ -48,8 +65,12 @@ const Projects = () => {
           <h2 className="text-2xl font-bold">
             {language === "en" ? project[9] : projeto[9]}
           </h2>
-        </div>
-        <div className="flex flex-col space-y-6 mb-10 md:items-center">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: -100 }}
+          transition={{ ease: 'easeIn', duration: 0.5, delay: 0.8 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          className="flex flex-col space-y-6 mb-10 md:items-center">
           <h1 className="text-2xl font-bold">
             {language === "en" ? project[10] : projeto[10]}
           </h1>
@@ -58,7 +79,7 @@ const Projects = () => {
           <h2 className="text-2xl font-bold">
             {language === "en" ? project[12] : projeto[12]}
           </h2>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
