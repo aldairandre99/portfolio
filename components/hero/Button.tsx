@@ -17,14 +17,6 @@ export const CustomButton = () => {
         radius="full"
         size="lg"
       >
-        {language === "en" ? dataEnglish[3] : dataPortuguese[3]}
-      </Button>
-      <Button
-        className="w-full text-xl font-normal mt-5 lg:mt-0 "
-        radius="full"
-        size="lg"
-        variant="bordered"
-      >
         {
           language === 'en' ? (
             <Link
@@ -42,6 +34,14 @@ export const CustomButton = () => {
             </Link>
           )
         }
+      </Button>
+      <Button
+        className="w-full text-xl font-normal mt-5 lg:mt-0 "
+        radius="full"
+        size="lg"
+        variant="bordered"
+      >
+        {language === "en" ? dataEnglish[3] : dataPortuguese[3]}
       </Button>
     </div>
   );
