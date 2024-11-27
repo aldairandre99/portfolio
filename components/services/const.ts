@@ -16,7 +16,7 @@ const servicos = [
     no mercado para o desenvolvimento da sua
     idéia e com entrega continuas
   `,
-  "Fala comigo",
+  "Fale comigo",
 ];
 
 export { services, servicos };

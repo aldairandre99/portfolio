@@ -13,7 +13,7 @@ const dataPortuguese = [
   `Engenheiro Informatico, freelancer, com foco em
         criar soluções digitais, com 2 anos de
         experiência, sempre em busca de novos desafios`,
-  "Me Conheça",
+  "Fale Comigo",
   "Meu CV",
 ];
 
