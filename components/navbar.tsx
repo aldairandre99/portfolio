@@ -1,3 +1,4 @@
+"use client"
 import {
   Navbar as NextUINavbar,
   NavbarContent,
@@ -15,9 +16,14 @@ import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
 import { GithubIcon } from "@/components/icons";
 import LanguageIcon from "@/components/LanguageIcon";
-
+import { motion } from 'framer-motion'
 export const Navbar = () => {
   return (
+    <motion.div
+      initial={{ opacity: 0, y: -100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ ease: 'easeIn', duration: 0.2 }}
+    >
     <NextUINavbar maxWidth="xl" position="sticky">
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <ul className="hidden lg:flex gap-4 justify-start ml-2">
@@ -82,5 +88,6 @@ export const Navbar = () => {
         </div>
       </NavbarMenu>
     </NextUINavbar>
+    </motion.div>
   );
 };
