@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 const Section = () => {
   return (
     <>
-      <section className="max-w-sm text-center mx-auto lg:text-left lg:flex lg:flex-row lg:justify-center lg:max-w-4xl lg:mt-32">
+      <section className="max-w-sm text-center mx-auto lg:text-left lg:flex lg:flex-row lg:justify-center lg:max-w-4xl lg:mt-32" id="about">
         <motion.div
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
