@@ -41,7 +41,11 @@ export const CustomButton = () => {
         size="lg"
         variant="bordered"
       >
-        {language === "en" ? dataEnglish[3] : dataPortuguese[3]}
+        <Link 
+          href={`https://wa.me/244924569259`}
+        >
+          {language === "en" ? dataEnglish[3] : dataPortuguese[3]}
+        </Link>
       </Button>
     </div>
   );
