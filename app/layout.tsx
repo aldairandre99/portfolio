@@ -34,7 +34,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html suppressHydrationWarning className="overflow-x-hidden" lang="en">
+    <html suppressHydrationWarning lang="en">
       <head />
       <body
         className={clsx(
