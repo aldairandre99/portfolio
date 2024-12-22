@@ -7,6 +7,7 @@ import DefaultLayout from "../defaultLayout";
 
 import { services, servicos } from "./const";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Index = () => {
   const { language } = useContext(LanguageContext);
@@ -31,7 +32,11 @@ const Index = () => {
               radius="full"
               size="lg"
             >
-              {language === "en" ? services[2] : servicos[2]}
+              <Link
+                href={`https://wa.me/244924569259`}
+              >
+                {language === "en" ? services[2] : services[2]}
+              </Link>
             </Button>
           </motion.div>
           <motion.ul
@@ -54,7 +59,11 @@ const Index = () => {
               radius="full"
               size="lg"
             >
-              {language === "en" ? services[2] : servicos[2]}
+              <Link
+                href={`https://wa.me/244924569259`}
+              >
+                {language === "en" ? services[2] : services[2]}
+              </Link>
             </Button>
           </motion.div>
         </div>
