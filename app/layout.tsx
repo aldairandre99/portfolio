@@ -9,6 +9,7 @@ import { fontPoppins } from "@/config/fonts";
 import { Navbar } from "@/components/navbar";
 import Footer from "@/components/footer";
 import Defaultlayout from "@/components/defaultLayout";
+import Hero from "@/components/hero";
 
 export const metadata: Metadata = {
   title: {
@@ -34,7 +35,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html suppressHydrationWarning className="overflow-x-hidden" lang="en">
+    <html suppressHydrationWarning className="lg:overflow-x-hidden" lang="en">
       <head />
       <body
         className={clsx(
@@ -43,13 +44,11 @@ export default function RootLayout({
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-          <div className="relative flex flex-col h-screen">
+          <div className="flex flex-col">
             <Navbar />
             <main>{children}</main>
-            <Defaultlayout>
-              <Footer />
-            </Defaultlayout>
           </div>
+          <Footer />
         </Providers>
       </body>
     </html>

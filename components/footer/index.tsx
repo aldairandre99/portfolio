@@ -17,7 +17,7 @@ const Footer = () => {
   const { language } = useContext(LanguageContext);
 
   return (
-    <div className="py-24">
+    <div className="container mx-auto max-w-7xl py-24 px-6 flex-grow overflow-x-auto">
       <div className="flex flex-col lg:flex-row justify-between">
         <motion.div
           initial={{ opacity: 0, x: -100 }}

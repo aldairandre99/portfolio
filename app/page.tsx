@@ -1,20 +1,17 @@
 import Hero from "@/components/hero";
 import Line from "@/components/line";
 import Services from "@/components/services";
-import DefaultLayout from "@/components/defaultLayout";
 import Projects from "@/components/projects";
 
 export default function Home() {
   return (
-    <section>
-      <DefaultLayout>
-        <Hero />
-      </DefaultLayout>
+    <section /* className="container mx-auto max-w-7xl  px-6 flex-grow" */>
+      <Hero />
       <Line />
-      <Services />
-      <DefaultLayout>
-        <Projects />
-      </DefaultLayout>
+      <div className="dark:bg-[#273240] w-full mt-6 p-6 overflow-x-hidden lg:mt-[240px] pt-28 pb-20">
+        <Services />
+      </div>
+      <Projects />
     </section>
   );
 }

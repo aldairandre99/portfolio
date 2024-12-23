@@ -15,7 +15,7 @@ const Projects = () => {
   const { language } = useContext(LanguageContext);
 
   return (
-    <section className="pt-8 lg:max-w-4xl mx-auto lg:pt-28" id="projects">
+    <section className="pt-8 px-6 lg:max-w-4xl mx-auto lg:pt-28 " id="projects">
       <motion.h1
         initial={{ opacity: 0, x: -100 }}
         transition={{ ease: 'easeIn', duration: 0.5, delay: 0.2 }}
