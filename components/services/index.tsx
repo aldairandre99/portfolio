@@ -7,6 +7,7 @@ import DefaultLayout from "../defaultLayout";
 
 import { services, servicos } from "./const";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Index = () => {
   const { language } = useContext(LanguageContext);
